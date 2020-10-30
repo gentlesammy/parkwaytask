@@ -17,8 +17,18 @@ const feesCalculator = async (AmountTransfered) => {
   );
   //equate charges value for the amount in matchedFeeConfig
   charges = matchedFeeConfig[0].feeAmount;
-  console.log(charges);
-  return charges;
+  let Amount = AmountTransfered;
+  let transferAmount = Amount - charges;
+  let debitAmount = transferAmount + charges;
+
+  //set the values for the fields: grab the fields from html and set the values
+  document.querySelector("#amount").textContent = Amount;
+  document.querySelector("#transamount").textContent = transferAmount;
+  document.querySelector("#charge").textContent = charges;
+  document.querySelector("#debitamount").textContent = debitAmount;
+
+  // console.log(charges);
+  // return charges;
 };
 
-feesCalculator(5000);
+feesCalculator(80000);
