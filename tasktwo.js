@@ -31,4 +31,6 @@ const feesCalculator = async (AmountTransfered) => {
   // return charges;
 };
 
-feesCalculator(80000);
+// feesCalculator(5000);
+// feesCalculator(45000);
+feesCalculator(50030);

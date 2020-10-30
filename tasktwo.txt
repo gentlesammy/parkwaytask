@@ -1,0 +1,5 @@
+Disscussion
+*In the case of the third amount (50030), did the debit amount correspond to the expected amount? 
+The  Amount is 50030, Charge from configuration file is 50 as it falls between 50001 - 999999999
+The customer will pay 50030 - 50 = 	49980
+a charge of 50 will be deducted from their account so they still ended up been debited 50030 
